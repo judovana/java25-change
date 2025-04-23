@@ -80,7 +80,7 @@ Java applications in Fedora can follow one of these approaches:
    _Examples: Tomcat, LibreOffice_
 
 2. **Specific Java version dependency**  
-   Tied to a single packaged Java runtime. Not affected by third-party JDKs or alternatives.  
+   The application uses only the specified Java version. Third-party JDKs or alternatives configuration won’t affect it.
    _Examples: JFlex, CUP_
 
 3. **Version-specific subpackages**  
