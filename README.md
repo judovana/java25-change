@@ -23,7 +23,7 @@
 
 Java is renowned for its exceptional backward compatibility. Applications compiled decades ago can still run on modern Java runtimes, with no compromise in performance or security—thanks to Just-In-Time (JIT) compilation.
 
-The reverse is also possible: Java code can run on older JDKs if compiled with the `--release` flag.
+The reverse is also possible: Java code can run on older JDKs if compiled with the `--release` flag, which is a very common practice.
 
 This flexibility allows Fedora to ship packages built with different Java versions, all working seamlessly together. There is no need for version-specific package duplication.
 
@@ -39,14 +39,14 @@ Additionally, users can run applications using a different Java runtime than the
 
 ## Status in Fedora 42
 
-- Only one LTS version (Java 21) is packaged.
-- Java 21 is the de facto "system JDK" due to lack of alternatives.
+- Only one OpenJDK LTS version (OpenJDK 21) is packaged.
+- OpenJDK 21 is the de facto "system JDK" due to lack of alternatives.
 - Some may argue there is no "system JDK" because there is no choice.
 
 
 ## Proposed Change for Fedora 43
 
-- Introduce another LTS version—Java 25—alongside Java 21.
+- Introduce another LTS version—OpenJDK 25—alongside OpenJDK 21.
 - Treat both LTS versions equally; neither is the default.
 - Users and maintainers can choose which version to use.
 - The most recent version will likely become the conventionally preferred one, but this is not enforced.
@@ -61,7 +61,7 @@ Additionally, users can run applications using a different Java runtime than the
 
 ## What This Means for Java Package Maintainers
 
-- Packages built with Java 21 will remain on 21 until maintainers opt to migrate to Java 25.
+- Packages built with OpenJDK 21 will remain on 21 until maintainers opt to migrate to OpenJDK 25.
 - Migration can proceed gradually over multiple Fedora releases.
 - Java SIG may assist in migrating packages when needed.
 - Bugs will be filed for packages that are hard to migrate.
@@ -79,8 +79,8 @@ Java applications in Fedora can follow one of these approaches:
    Use a generic “java” dependency – This allows compatibility with any implementation, including third-party JDKs. The actual runtime is chosen based on available repositories and system alternatives.
    _Examples: Tomcat, LibreOffice_
 
-2. **Specific Java version dependency**  
-   The application uses only the specified Java version. Third-party JDKs or alternatives configuration won’t affect it.
+2. **Specific OpenJDK version dependency**
+   The application uses only the specified OpenJDK version. Third-party JDKs or alternatives configuration won’t affect it.
    _Examples: JFlex, CUP_
 
 3. **Version-specific subpackages**  
