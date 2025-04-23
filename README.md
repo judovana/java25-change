@@ -66,7 +66,7 @@ Additionally, users can run applications using a different Java runtime than the
 - Java SIG may assist in migrating packages when needed.
 - Bugs will be filed for packages that are hard to migrate.
 - Provenpackagers may fix some issues if maintainers are unresponsive.
-- Unmaintained packages may be retired when their Java version is deprecated.
+- Unmaintained packages may be retired when their Java version is retired.
 
 **Key Benefit:** Unported packages will no longer block the adoption of new Java versions. Updates will proceed more smoothly, and the Java SIG will no longer have to carry the burden of mass migration efforts alone.
 
