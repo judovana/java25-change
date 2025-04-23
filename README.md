@@ -79,7 +79,7 @@ Java applications in Fedora can follow one of these approaches:
    Use a generic “java” dependency – This allows compatibility with any implementation, including third-party JDKs. The actual runtime is chosen based on available repositories and system alternatives.
    _Examples: Tomcat, LibreOffice_
 
-2. **Specific OpenJDK version dependency**
+2. **Specific OpenJDK version dependency**  
    The application uses only the specified OpenJDK version. Third-party JDKs or alternatives configuration won’t affect it.
    _Examples: JFlex, CUP_
 
