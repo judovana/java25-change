@@ -35,6 +35,7 @@ Additionally, users can run applications using a different Java runtime than the
 - Multiple LTS versions of OpenJDK were packaged.
 - One version was designated the “system Java.”
 - Switching the system Java required a FESCo-approved change and coordinated porting by the Java SIG.
+- java-25-opendjk will be added, but will not provide java
 
 
 ## Status in Fedora 42
@@ -42,7 +43,7 @@ Additionally, users can run applications using a different Java runtime than the
 - Only one OpenJDK LTS version (OpenJDK 21) is packaged.
 - OpenJDK 21 is the de facto "system JDK" due to lack of alternatives.
 - Some may argue there is no "system JDK" because there is no choice.
-
+- java-25-opendjk will be added, but will not provide java
 
 ## Proposed Change for Fedora 43
 
@@ -50,6 +51,7 @@ Additionally, users can run applications using a different Java runtime than the
 - Treat both LTS versions equally; neither is the default.
 - Users and maintainers can choose which version to use.
 - The most recent version will likely become the conventionally preferred one, but this is not enforced.
+- java-25-opendjk will be added and will provide java
 
 
 ## What This Change Means for Fedora Users
